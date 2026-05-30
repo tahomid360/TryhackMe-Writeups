@@ -1,0 +1,18 @@
+# Day 4 - Active Directory Basics
+
+Today I completed the Active Directory Basics module.
+
+## Key Topics Covered
+- Active Directory Fundamentals
+- Domains & Domain Controllers
+- Organizational Units (OUs)
+- User & Group Management
+- Kerberos Authentication (TGT & TGS)
+- Enterprise Network Management
+
+## Key Takeaway
+Active Directory is a central directory service that helps organizations manage users, computers, and resources securely across a network.
+
+#300DaysOfCyberSecurity
+#TryHackMe
+#ActiveDirectory
