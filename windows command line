@@ -1,0 +1,86 @@
+Windows Command Line - Completed ✅
+Room: TryHackMe - Windows Command Line
+Date: May 2, 2027
+Day: 5/300
+
+Day 5 of my 300-day cybersecurity journey, and I've completed the Windows Command Line room on TryHackMe.
+
+I've spent most of my time in Linux terminals, but Windows dominates enterprise environments. If I can't navigate the Windows CLI efficiently, I can't respond to incidents, hunt threats, or automate defenses. Today, I changed that.
+
+📋 What I Learned
+File System Navigation
+
+Used cd, dir, tree to explore directory structures without touching the mouse.
+
+Created and removed directories with mkdir and rmdir.
+
+Copied, moved, and deleted files using copy, move, del—bulk operations that save hours.
+
+File Management Advanced
+
+Used xcopy and robocopy for robust file replication with error recovery.
+
+Viewed file content with type and more for quick inspection.
+
+Process Management
+
+Listed running processes with tasklist and filtered results using parameters.
+
+Terminated unresponsive applications with taskkill /PID—essential for incident response.
+
+Understood how attackers use process manipulation to evade detection.
+
+Network Troubleshooting
+
+Diagnosed IP configuration with ipconfig /all.
+
+Tested connectivity and latency using ping -t for continuous monitoring.
+
+Mapped active connections with netstat -anob to spot suspicious outbound traffic.
+
+Resolved DNS issues using ipconfig /flushdns.
+
+System Information
+
+Retrieved OS details, hardware specs, and uptime with systeminfo.
+
+Identified current user context with whoami.
+
+Displayed hostname and network details using hostname.
+
+Command Help & Navigation
+
+Used command /? to explore help documentation for every tool.
+
+Cleared the terminal with cls for a clean workspace.
+
+⚠️ Problems I Faced & How I Solved Them
+Problem	Solution
+netstat -b required admin privileges	Ran Command Prompt as Administrator to view process names
+Overwhelmed by netstat output	Used netstat -anb | findstr ESTABLISHED to filter active connections
+Forgot syntax for advanced robocopy options	Used robocopy /? to explore mirror and logging options
+Couldn't locate a specific file	Used dir /s filename to search recursively through directories
+💻 Commands & Tools Mastered
+text
+cd                          # Change directory
+dir                         # List directory contents
+tree                        # Display folder structure
+mkdir / rmdir               # Create / remove directories
+copy / move / del           # File operations
+xcopy / robocopy            # Advanced file replication
+type / more                 # View file content
+tasklist                    # List running processes
+taskkill /PID               # Terminate process by ID
+ipconfig /all               # Full network configuration
+ping -t                     # Continuous connectivity test
+netstat -anob               # Connections with process names
+systeminfo                  # Detailed system information
+whoami                      # Current user context
+hostname                    # Display machine name
+command /?                  # Get help for any command
+cls                         # Clear the terminal
+🔗 Links
+TryHackMe Room: Windows Command Line
+
+GitHub Repo (Daily Notes & Cheatsheets): Link in comments 👇
+
