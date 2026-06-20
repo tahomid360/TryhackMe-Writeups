@@ -1,0 +1,71 @@
+Day 5/300: Windows Command Line Deep Dive – Moving Beyond the GUI
+
+Today marks Day 5 of my 300-day cybersecurity commitment. I wrapped up the "Windows Command Line" module on TryHackMe, and I want to share what I actually learned—not just theory, but practical, actionable skills that solve real problems.
+
+What I Mastered Today:
+
+1. File System Navigation & Manipulation
+
+Navigated complex directory structures using cd, dir, and tree to map out system hierarchies.
+
+Performed bulk file operations with copy, xcopy, move, and del—automating tasks that would take minutes in GUI in seconds.
+
+Used robocopy for robust file replication with error recovery, a lifesaver for backup scripts.
+
+2. Process & Task Management
+
+Leveraged tasklist with filters to identify rogue processes consuming memory.
+
+Killed unresponsive applications remotely using taskkill /PID—essential for incident response when RDP is down.
+
+Scheduled automated maintenance tasks using schtasks, understanding how attackers use this for persistence.
+
+3. Networking & Troubleshooting
+
+Used ipconfig /all to diagnose DHCP and DNS misconfigurations.
+
+Mapped network latency and packet loss using ping -t for continuous monitoring.
+
+Analyzed active connections with netstat -anob to spot suspicious outbound traffic—a core skill for threat hunting.
+
+Cleared DNS cache with ipconfig /flushdns to resolve domain resolution issues instantly.
+
+4. System Information & Security
+
+Retrieved hardware and OS details using systeminfo—critical for vulnerability assessments.
+
+Managed user accounts and group memberships with net user and net localgroup.
+
+Checked patch levels and uptime to verify compliance with security policies.
+
+5. PowerShell Cmdlets (The Game Changer)
+
+Explored PowerShell's Get-Command, Get-Help, and Get-Process—realizing its superiority over CMD for automation.
+
+Started scripting simple one-liners to filter logs and export results to CSV for reporting.
+
+Why This Matters for Cybersecurity:
+
+Incident Response: When a system is compromised, the GUI is often slow, broken, or infected. The CLI is your lifeline.
+
+Forensics: Command-line tools allow you to collect volatile data (running processes, network connections) before it disappears.
+
+Automation: Patching, log analysis, and user management must be automated at scale—CLI makes this possible.
+
+Understanding Attackers: Many ransomware strains and post-exploitation tools rely on native Windows commands. Knowing these helps you detect and defend.
+
+The Challenge I Solved Today:
+
+I encountered a scenario where a system was unresponsive due to a memory leak. Using tasklist and taskkill, I identified and terminated the offending process, restored system performance, and used schtasks to schedule a daily reboot—all without a single click.
+
+Daily Accountability:
+
+I'm documenting every command, cheat sheet, and solve on my GitHub (link in comments). This isn't about vanity—it's about building muscle memory and proving that consistency compounds.
+
+To Fellow Learners:
+
+Don't dismiss the Windows CLI as "old school." It is the bedrock of enterprise security. Whether you're defending Active Directory, hunting threats, or responding to incidents, these commands are your toolkit.
+
+300 days is a long journey. But today, I'm one day stronger.
+
+Let's connect if you're on a similar path. I'd love to exchange notes.
